@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Cusp Canvas</title>
+
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="./index.js"></script>
+</head>
+<body>
+  
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd; box-shadow: 0 8px 6px -6px #999;">
+    <a href="/" class="navbar-brand">Cusp Canvas Gallery</a>
+    <a href="how-to.html" class="nav-link btn disabled">How To</a>
+ </nav>
+
+  <div class="container-fluid" style="margin-top: 30px;" style="background-color: #e3f2fd;" id='canvas-details'>
+    <div class='row-fluid'>
+      <div class="col-sm-12">
+       <div style="display: none;" class="alert alert-success text-center" id="msg"></div>
+      </div>
+      <div class="col-sm-12">
+        <h1 class="text-center">Canvas Details</h1>
+      </div>
+      <div class="col-sm-12 text-center">
+        <div id="canvas-title"></div>
+        <div id='canvas-image'></div>
+        <div id="canvas-price"></div>
+        <div id="canvas-desc"></div>
+        <div id='highest-offer'></div>
+      </div>
+      <div class="col-sm-12 text-center">
+       <form id="buy-now" class="col-sm-12">
+        <input type="hidden" name="canvas-id" id="canvas-id" />
+        <input type="hidden" name="buy-now-price" id="buy-now-price" />
+        <br>
+        <button type="submit" class="btn btn-primary form-submit">Buy</button>
+       </form>
+       <form id='make-offer' class='col-sm-12'>
+         <input type="hidden" name="canvas-id" id="canvas-id" />
+         <input type='number' name='offer' id='offer' />
+         <br>
+         <button type="submit" class="btn btn-primary form-submit">Make Offer</button>
+       </form>
+       <form id='accept-offer' class='col-sm-12'>
+         <input type='hidden' name='canvas-id' id='canvas-id' />
+         <input type='hidden' name='offer' id='offer' />
+         <br>
+         <button type='submit' class='btn btn-primary form-submit'>Accept Offer</button>
+       </form>
+      </div>
+    </div>
+  </div>
+
+</body>
